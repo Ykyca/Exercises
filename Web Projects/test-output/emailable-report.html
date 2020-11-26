@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">9</td><td class="num">0</td><td class="num">0</td><td class="num">43</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.HomePageTests</td><td><a href="#m0">beforeClass</a></td><td rowspan="1">1606427463371</td><td rowspan="1">20</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">tests.AuthenticationRegistrationPageTests</td><td><a href="#m1">beforeClass</a></td><td rowspan="1">1606427463435</td><td rowspan="1">-1606427463435</td></tr><tr class="skippedodd"><td rowspan="1">tests.BuyDressPageTests</td><td><a href="#m2">beforeClass</a></td><td rowspan="1">1606427463428</td><td rowspan="1">-1606427463428</td></tr><tr class="skippedeven"><td rowspan="1">tests.CreateAnAccountPageTests</td><td><a href="#m3">beforeClass</a></td><td rowspan="1">1606427463438</td><td rowspan="1">-1606427463438</td></tr><tr class="skippedodd"><td rowspan="1">tests.HomePageTests</td><td><a href="#m4">quit</a></td><td rowspan="1">1606427463482</td><td rowspan="1">-1606427463482</td></tr><tr class="skippedeven"><td rowspan="1">tests.ShoppingCartSummaryPageTests</td><td><a href="#m5">beforeClass</a></td><td rowspan="1">1606427463431</td><td rowspan="1">-1606427463431</td></tr><tr class="skippedodd"><td rowspan="1">tests.SummerDressesPageTests</td><td><a href="#m6">setUp</a></td><td rowspan="1">1606427463425</td><td rowspan="1">-1606427463425</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.AuthenticationRegistrationPageTests</td><td><a href="#m7">createNewAccount</a></td><td rowspan="1">1606427463436</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">tests.BuyDressPageTests</td><td><a href="#m8">buyDressOne</a></td><td rowspan="1">1606427463429</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">tests.CreateAnAccountPageTests</td><td><a href="#m9">registerOneNewUser</a></td><td rowspan="1">1606427463438</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="3">tests.HomePageTests</td><td><a href="#m10">verifySummerDressesHomePage</a></td><td rowspan="1">1606427463422</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m11">verifySummerDressesHomePageD</a></td><td rowspan="1">1606427463419</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m12">verifySummerDressesHomePageW</a></td><td rowspan="1">1606427463414</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">tests.ShoppingCartSummaryPageTests</td><td><a href="#m13">verifyProceedAndSignUp</a></td><td rowspan="1">1606427463433</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m14">verifyShoppingCartSummary</a></td><td rowspan="1">1606427463432</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">tests.SummerDressesPageTests</td><td><a href="#m15">selectDressOne</a></td><td rowspan="1">1606427463426</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">tests.HomePageTests#beforeClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.AuthenticationRegistrationPageTests#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.BuyDressPageTests#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.CreateAnAccountPageTests#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.HomePageTests#quit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.ShoppingCartSummaryPageTests#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.SummerDressesPageTests#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.AuthenticationRegistrationPageTests#createNewAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.BuyDressPageTests#buyDressOne</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.CreateAnAccountPageTests#registerOneNewUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.HomePageTests#verifySummerDressesHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.HomePageTests#verifySummerDressesHomePageD</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.HomePageTests#verifySummerDressesHomePageW</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.ShoppingCartSummaryPageTests#verifyProceedAndSignUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.ShoppingCartSummaryPageTests#verifyShoppingCartSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">tests.SummerDressesPageTests#selectDressOne</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.&lt;init&gt;(DriverService.java:259)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.&lt;init&gt;(ChromeDriverService.java:101)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at tests.HomePageTests.beforeClass(HomePageTests.java:19)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 24 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
